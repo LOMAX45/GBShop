@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C1748CF2289BAB0D003D787B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1748CF1289BAB0D003D787B /* AppDelegate.swift */; };
-		C1748CF4289BAB0D003D787B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1748CF3289BAB0D003D787B /* SceneDelegate.swift */; };
 		C1748CFB289BAB10003D787B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1748CFA289BAB10003D787B /* Assets.xcassets */; };
 		C1748CFE289BAB10003D787B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1748CFC289BAB10003D787B /* LaunchScreen.storyboard */; };
 		C1748D09289BAB10003D787B /* GBShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1748D08289BAB10003D787B /* GBShopTests.swift */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		C1748CEE289BAB0D003D787B /* GBShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1748CF1289BAB0D003D787B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C1748CF3289BAB0D003D787B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C1748CFA289BAB10003D787B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1748CFD289BAB10003D787B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1748CFF289BAB10003D787B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				C1748CF1289BAB0D003D787B /* AppDelegate.swift */,
-				C1748CF3289BAB0D003D787B /* SceneDelegate.swift */,
 				C1748D22289BAD6C003D787B /* BusinessLogic */,
 				C1748D23289BAD7F003D787B /* Entity */,
 				C1748D24289BAD8B003D787B /* Assembly */,
@@ -316,7 +313,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1748CF2289BAB0D003D787B /* AppDelegate.swift in Sources */,
-				C1748CF4289BAB0D003D787B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
