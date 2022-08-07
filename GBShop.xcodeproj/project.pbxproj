@@ -25,6 +25,9 @@
 		C18CA800289D412D001BFCFB /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CA7FF289D412D001BFCFB /* AuthRequestFactory.swift */; };
 		C18CA802289D4160001BFCFB /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CA801289D4160001BFCFB /* Auth.swift */; };
 		C18CA804289D424D001BFCFB /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CA803289D424D001BFCFB /* RequestFactory.swift */; };
+		C1D208A0289FECA000D5CC55 /* LogoutResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D2089F289FECA000D5CC55 /* LogoutResult.swift */; };
+		C1D208A2289FED8600D5CC55 /* LogoutRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D208A1289FED8600D5CC55 /* LogoutRequestFactory.swift */; };
+		C1D208A4289FEE2E00D5CC55 /* Logout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D208A3289FEE2E00D5CC55 /* Logout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		C18CA7FF289D412D001BFCFB /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
 		C18CA801289D4160001BFCFB /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		C18CA803289D424D001BFCFB /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		C1D2089F289FECA000D5CC55 /* LogoutResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResult.swift; sourceTree = "<group>"; };
+		C1D208A1289FED8600D5CC55 /* LogoutRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRequestFactory.swift; sourceTree = "<group>"; };
+		C1D208A3289FEE2E00D5CC55 /* Logout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logout.swift; sourceTree = "<group>"; };
 		E0E52BC9F4102D5C6C12A905 /* Pods_GBShopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBShopTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2245458AADF0903C6EAFB57 /* Pods_GBShop_GBShopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBShop_GBShopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEAEF82D23BEC3175B0C446C /* Pods-GBShopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShopTests.debug.xcconfig"; path = "Target Support Files/Pods-GBShopTests/Pods-GBShopTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -191,6 +197,7 @@
 			children = (
 				C18CA7FA289D40B3001BFCFB /* LoginResult.swift */,
 				C18CA7FC289D40C2001BFCFB /* User.swift */,
+				C1D2089F289FECA000D5CC55 /* LogoutResult.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -250,6 +257,8 @@
 			children = (
 				C18CA7FF289D412D001BFCFB /* AuthRequestFactory.swift */,
 				C18CA801289D4160001BFCFB /* Auth.swift */,
+				C1D208A1289FED8600D5CC55 /* LogoutRequestFactory.swift */,
+				C1D208A3289FEE2E00D5CC55 /* Logout.swift */,
 				C18CA803289D424D001BFCFB /* RequestFactory.swift */,
 			);
 			path = Network;
@@ -503,9 +512,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1D208A2289FED8600D5CC55 /* LogoutRequestFactory.swift in Sources */,
 				C18CA7FB289D40B3001BFCFB /* LoginResult.swift in Sources */,
+				C1D208A0289FECA000D5CC55 /* LogoutResult.swift in Sources */,
 				C18CA7F5289D0198001BFCFB /* DataRequest.swift in Sources */,
 				C18CA7F9289D3B68001BFCFB /* RequestRouter.swift in Sources */,
+				C1D208A4289FEE2E00D5CC55 /* Logout.swift in Sources */,
 				C1748CF2289BAB0D003D787B /* AppDelegate.swift in Sources */,
 				C18CA7F3289D017E001BFCFB /* AbstractErrorParser.swift in Sources */,
 				C18CA7F7289D3526001BFCFB /* ErrorParser.swift in Sources */,

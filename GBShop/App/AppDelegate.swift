@@ -23,6 +23,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print(error.localizedDescription)
             }
         }
+        
+        let logout = requestFactory.makeLogoutFactory()
+        logout.logout(userId: 123) { response in
+            switch response.result {
+            case .success(let logout):
+                print(logout)
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
         return true
     }
 
