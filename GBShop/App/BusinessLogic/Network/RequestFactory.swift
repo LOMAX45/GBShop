@@ -32,4 +32,9 @@ class RequestFactory {
         let errorParser = makeErrorParser()
         return Logout(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
     }
+    
+    func makeRegisterFactory() -> RegRequestFactory {
+        let errorParser = makeErrorParser()
+        return Register(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
 }
