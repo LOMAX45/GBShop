@@ -258,6 +258,42 @@
 			path = Environments;
 			sourceTree = "<group>";
 		};
+		C18881A528A01B8200BAEB6F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C18CA7FF289D412D001BFCFB /* AuthRequestFactory.swift */,
+				C18CA801289D4160001BFCFB /* Auth.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C18881A628A01B8D00BAEB6F /* Logout */ = {
+			isa = PBXGroup;
+			children = (
+				C1D208A3289FEE2E00D5CC55 /* Logout.swift */,
+				C1D208A1289FED8600D5CC55 /* LogoutRequestFactory.swift */,
+			);
+			path = Logout;
+			sourceTree = "<group>";
+		};
+		C18881A728A01BA300BAEB6F /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				C1D208A7289FF75A00D5CC55 /* RegRequestFactory.swift */,
+				C1D208AB289FF83E00D5CC55 /* Register.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		C18881A828A01BB600BAEB6F /* Change */ = {
+			isa = PBXGroup;
+			children = (
+				C1D208AF289FFDBD00D5CC55 /* ChangeRequestFactory.swift */,
+				C1D208B1289FFDDD00D5CC55 /* Change.swift */,
+			);
+			path = Change;
+			sourceTree = "<group>";
+		};
 		C18CA7F1289D016B001BFCFB /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,14 +308,10 @@
 		C18CA7FE289D4118001BFCFB /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				C18CA7FF289D412D001BFCFB /* AuthRequestFactory.swift */,
-				C18CA801289D4160001BFCFB /* Auth.swift */,
-				C1D208A1289FED8600D5CC55 /* LogoutRequestFactory.swift */,
-				C1D208A3289FEE2E00D5CC55 /* Logout.swift */,
-				C1D208A7289FF75A00D5CC55 /* RegRequestFactory.swift */,
-				C1D208AB289FF83E00D5CC55 /* Register.swift */,
-				C1D208AF289FFDBD00D5CC55 /* ChangeRequestFactory.swift */,
-				C1D208B1289FFDDD00D5CC55 /* Change.swift */,
+				C18881A528A01B8200BAEB6F /* Auth */,
+				C18881A628A01B8D00BAEB6F /* Logout */,
+				C18881A728A01BA300BAEB6F /* Register */,
+				C18881A828A01BB600BAEB6F /* Change */,
 				C18CA803289D424D001BFCFB /* RequestFactory.swift */,
 			);
 			path = Network;
