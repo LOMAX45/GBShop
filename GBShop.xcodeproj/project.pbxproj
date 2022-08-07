@@ -32,6 +32,9 @@
 		C1D208A8289FF75A00D5CC55 /* RegRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D208A7289FF75A00D5CC55 /* RegRequestFactory.swift */; };
 		C1D208AA289FF7D300D5CC55 /* RegResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D208A9289FF7D300D5CC55 /* RegResult.swift */; };
 		C1D208AC289FF83E00D5CC55 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D208AB289FF83E00D5CC55 /* Register.swift */; };
+		C1D208AE289FFD5000D5CC55 /* ChangeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D208AD289FFD5000D5CC55 /* ChangeResult.swift */; };
+		C1D208B0289FFDBD00D5CC55 /* ChangeRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D208AF289FFDBD00D5CC55 /* ChangeRequestFactory.swift */; };
+		C1D208B2289FFDDD00D5CC55 /* Change.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D208B1289FFDDD00D5CC55 /* Change.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,9 @@
 		C1D208A7289FF75A00D5CC55 /* RegRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegRequestFactory.swift; sourceTree = "<group>"; };
 		C1D208A9289FF7D300D5CC55 /* RegResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegResult.swift; sourceTree = "<group>"; };
 		C1D208AB289FF83E00D5CC55 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		C1D208AD289FFD5000D5CC55 /* ChangeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeResult.swift; sourceTree = "<group>"; };
+		C1D208AF289FFDBD00D5CC55 /* ChangeRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeRequestFactory.swift; sourceTree = "<group>"; };
+		C1D208B1289FFDDD00D5CC55 /* Change.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Change.swift; sourceTree = "<group>"; };
 		E0E52BC9F4102D5C6C12A905 /* Pods_GBShopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBShopTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2245458AADF0903C6EAFB57 /* Pods_GBShop_GBShopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBShop_GBShopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEAEF82D23BEC3175B0C446C /* Pods-GBShopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShopTests.debug.xcconfig"; path = "Target Support Files/Pods-GBShopTests/Pods-GBShopTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -203,11 +209,12 @@
 		C1748D23289BAD7F003D787B /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				C18CA7FA289D40B3001BFCFB /* LoginResult.swift */,
 				C18CA7FC289D40C2001BFCFB /* User.swift */,
-				C1D2089F289FECA000D5CC55 /* LogoutResult.swift */,
 				C1D208A5289FF20A00D5CC55 /* UserPersonalData.swift */,
+				C18CA7FA289D40B3001BFCFB /* LoginResult.swift */,
+				C1D2089F289FECA000D5CC55 /* LogoutResult.swift */,
 				C1D208A9289FF7D300D5CC55 /* RegResult.swift */,
+				C1D208AD289FFD5000D5CC55 /* ChangeResult.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -271,6 +278,8 @@
 				C1D208A3289FEE2E00D5CC55 /* Logout.swift */,
 				C1D208A7289FF75A00D5CC55 /* RegRequestFactory.swift */,
 				C1D208AB289FF83E00D5CC55 /* Register.swift */,
+				C1D208AF289FFDBD00D5CC55 /* ChangeRequestFactory.swift */,
+				C1D208B1289FFDDD00D5CC55 /* Change.swift */,
 				C18CA803289D424D001BFCFB /* RequestFactory.swift */,
 			);
 			path = Network;
@@ -525,7 +534,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1D208A2289FED8600D5CC55 /* LogoutRequestFactory.swift in Sources */,
+				C1D208B2289FFDDD00D5CC55 /* Change.swift in Sources */,
 				C1D208AC289FF83E00D5CC55 /* Register.swift in Sources */,
+				C1D208B0289FFDBD00D5CC55 /* ChangeRequestFactory.swift in Sources */,
 				C18CA7FB289D40B3001BFCFB /* LoginResult.swift in Sources */,
 				C1D208A0289FECA000D5CC55 /* LogoutResult.swift in Sources */,
 				C18CA7F5289D0198001BFCFB /* DataRequest.swift in Sources */,
@@ -540,6 +551,7 @@
 				C1D208A6289FF20A00D5CC55 /* UserPersonalData.swift in Sources */,
 				C18CA7FD289D40C2001BFCFB /* User.swift in Sources */,
 				C1D208A8289FF75A00D5CC55 /* RegRequestFactory.swift in Sources */,
+				C1D208AE289FFD5000D5CC55 /* ChangeResult.swift in Sources */,
 				C18CA802289D4160001BFCFB /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
