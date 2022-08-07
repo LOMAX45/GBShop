@@ -51,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         let changer = requestFactory.makeChangeFactory()
-        register.register(userId: 123,
+        changer.change(userId: 123,
                           username: "Somebody",
                           password: "mypassword",
                           email: "some@some.ru",
