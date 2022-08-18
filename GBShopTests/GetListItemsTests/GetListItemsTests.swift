@@ -1,5 +1,5 @@
 //
-//  ChangeTests.swift
+//  GetListItemsTests.swift
 //  GBShopTests
 //
 //  Created by Максим Лосев on 18.08.2022.
@@ -8,35 +8,29 @@
 import XCTest
 @testable import GBShop
 
-class ChangeTests: XCTestCase {
+class GetListItemsTests: XCTestCase {
     
     let expectation = XCTestExpectation(description: "Download https://failUrl")
     var errorParser: ErrorParserStub!
-    var testRequest: ChangeRequestFactory!
-    
+    var testRequest: GetListItemsFactory!
+
     override func setUpWithError() throws {
         super.setUp()
         errorParser = ErrorParserStub()
-        testRequest = RequestFactory().makeChangeFactory()
+        testRequest = RequestFactory().makeGetListItemsFactory()
     }
-    
+
     override func tearDownWithError() throws {
         errorParser = nil
         testRequest = nil
         super.tearDown()
     }
-    
-    func testChange() {
-        testRequest.change(userId: 123,
-                           username: "Somebody",
-                           password: "mypassword",
-                           email: "some@some.ru",
-                           gender: "m",
-                           payCard: "9872389-2424-234224-234",
-                           bio: "This is good! I think I will switch to another language") { [weak self] response in
+
+    func testGetListItems() {
+        testRequest.getListItems(pageNumber: 1, idCategory: 1) { [weak self] response in
             switch response.result {
             case .success(let result):
-                XCTAssertEqual(result.result, 1, "Unable to change a personal data as requested")
+                XCTAssertGreaterThan(result.count, 0, "No items found in store")
             case .failure:
                 XCTFail()
             }
@@ -44,5 +38,5 @@ class ChangeTests: XCTestCase {
         }
         wait(for: [expectation], timeout: 10.0)
     }
-    
+
 }

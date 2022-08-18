@@ -66,6 +66,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
+        let getterList = requestFactory.makeGetListItemsFactory()
+        getterList.getListItems(pageNumber: 1, idCategory: 1) { response in
+            switch response.result {
+            case .success(let listItems):
+                print(listItems)
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
+        let getterProduct = requestFactory.makeGetProductFactory()
+        getterProduct.getProduct(id: 123) { responce in
+            switch responce.result {
+            case .success(let product):
+                print(product)
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
         return true
     }
     
