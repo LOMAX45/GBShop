@@ -39,19 +39,4 @@ class AuthTests: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
     
-    //Этот тест просто для примера, чтобы было несколько тестов.
-    //К сожалению, он не будет работать из-за того, что с сервера никогда не приходит ошибки.
-    func testAuthWithWrongCredentials() {
-        testRequest.login(userName: "", password: "") { [weak self] response in
-            switch response.result {
-            case .success(let result):
-                XCTAssertEqual(result.result, 0, "Authentication failed")
-            case .failure:
-                XCTFail()
-            }
-            self?.expectation.fulfill()
-        }
-        wait(for: [expectation], timeout: 10.0)
-    }
-    
 }
